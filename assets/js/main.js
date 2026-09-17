@@ -349,7 +349,7 @@ function initAppVersion() {
             if (p) p.remove()
         }, 321)
         document.querySelector("main .app-desc").textContent = `${data.tag_name} | ${bytesToMiB(data.assets[0].size)}MB | ${data.published_at.split("T")[0]}` || "Technology for a Convenient Life"
-        document.querySelector("#download").href = "https://gh-proxy.com/" + data.assets[0].browser_download_url || "https://www.lanzouu.com/b0ejgbfyf"
+       // document.querySelector("#download").href = "https://gh-proxy.com/" + data.assets[0].browser_download_url || "https://www.lanzouu.com/b0ejgbfyf"
         document.querySelector("#update .app-logs").innerHTML = normalizeBody(data.body) || "修复了一些已知问题"
         initQRcode()
     }
